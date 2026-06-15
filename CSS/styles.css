@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+	background-color: #fff;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    font-family: sans-serif;
+}
+.navbar{
+    width: 86%;
+    display: flex;
+    padding: 15px 0;
+    align-items: center;
+    margin: auto;
+    justify-content: space-between;
+}
+.navbar .logo{
+    cursor: pointer;
+    margin-top: -1%;
+    margin-left: -6%;
+    width:160px ;
+}
+ul{
+    margin-top: -4%;
+}
+ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+}
+ul li a{
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: -3%;
+    transition: -4s ease;
+    color: black;
+    font-family: Geneva, Tahoma, sans-serif;
+}
+ul li a:hover{
+    color: rgb(230, 104, 59);
+}
+.active{
+    padding: 8px;
+    border-radius: 10%;
+    background-color: rgb(230, 104, 59);
+    transition: 1s ease ;
+}
+.active:hover{
+    color: #fff;
+}
+
+.info{
+    margin-left: 2%;
+    margin-top: 6%;
+}
+.info h1{
+    font-size: 65px;
+    color: rgb(36, 32, 30);
+}
+.info h3{
+    font-size: 25px;
+    letter-spacing: 1px;
+    line-height: 24px;
+}
+.info span{
+    color: rgb(230, 104, 59);
+}
+.info a{
+    text-decoration: none;
+    color: #fff;
+    margin: 26px 0;
+    background: rgb(36,32 , 30) ;
+    padding: 10px 16px;
+    display: inline-block;
+    letter-spacing: 2px;
+    border-radius: 10px;
+    transition: -3s ease ;
+}
+.info a:hover{
+    background: rgb(59, 174, 209) ;
+}
+.image{
+    width: 30%;
+    bottom: 0;
+    position: absolute;
+    right: 100px;
+    height: 60%;
+    cursor: cell;
+}
+.image img{
+    position: absolute;
+    height: 140%;
+    left: 5%;
+    bottom: 0;
+    border-radius: 70px;
+}
+
+.typing-text{
+    font-size: 34px;
+    min-width: 280px;
+    font-weight: bold;
+}
+.typing-text span{
+    position: relative;
+}
+.typing-text span::before{
+    content: "Web-developer";
+    color: rgb(230, 104, 59);
+    animation: words 20s infinite;
+    
+}
+.typing-text span::after{
+      content: "";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    
+    animation: cursor 0.6s infinite;
+}
+@keyframes cursor{
+    to{
+       border-left: 3px solid  rgb(230, 104, 59);
+    }
+}
+@keyframes words{
+    0%, 20%{
+        content: "web-developer";
+    }
+    21%, 40%{
+        content:"IT-tech";
+    }
+    41%, 60%{
+        content: "Youtuber";
+    }
+    61%, 80%{
+        content: "Data-Clerk";
+    }
+    81%, 100%{
+        content: "Script-coder";
+    }
+}
